@@ -3,7 +3,8 @@ set -e
 
 # load bash integration
 source "$SPACK_ROOT/share/spack/setup-env.sh"
-
+mkdir -p /tmp/spack-stage
+chmod 777 /tmp/spack-stage
 # set env and view paths
 SPACK_ENV_PATH="$GITHUB_WORKSPACE/spack/env"
 SPACK_ENV_VIEW="$SPACK_ENV_PATH/view"
